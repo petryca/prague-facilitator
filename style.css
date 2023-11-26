@@ -11,17 +11,35 @@
 }
 
 :root {
-    font-size: 18px;
+    font-size: 28px;
     font-family: 'Lato', sans-serif;
-    color: #444;
+    color: #687098;
     line-height: 1.6;
+}
+
+@media (max-width: 1800px) {
+    :root { 
+        font-size: 24px; 
+    }
+}
+
+@media (max-width: 1200px) {
+    :root {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 1000px) {
+    :root {
+        font-size: 18px;
+    }
 }
 
 header {
     height: 80vh;
     background-image: url(media/hero.jpg);
     background-size: cover;
-    background-position: 70%;
+    background-position: 80% 50%;
     position: sticky;
     top: 0;
     z-index: -1;
@@ -32,8 +50,34 @@ header h1 {
     font-weight: 200;
     line-height: 1;
     padding: 1rem;
-    font-size: 2.8rem;
+    font-size: 4rem;
+    letter-spacing: -1px;
+    text-shadow: 1px 1px 16px rgba(0, 0, 0, .8);
 }
+
+@media (max-width: 1400px) {
+    header h1 {
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 1000px) {
+    header h1 {
+        transform: rotate(-90deg);
+        transform-origin: top left;
+        position: absolute;
+        top: 440px;
+        left: 0;
+    }
+}
+
+@media (max-width: 800px) {
+    header h1 {
+        font-size: 2.2rem;
+        top: 330px
+    }
+}
+
 
 header h1 span {
     font-weight: 900;
@@ -42,12 +86,30 @@ header h1 span {
 main {
     position: relative;
     z-index: 2;
-    background-color: #f3F4F6;
+    background-color: hsl(220, 14%, 18%);
     overflow: auto;
 }
 
 section {
     margin: 4rem;
+}
+
+@media (max-width: 1400px) {
+    section {
+        margin: 4rem 3rem;
+    }
+}
+
+@media (max-width: 1000px) {
+    section {
+        margin: 4rem 2rem;
+    }
+}
+
+@media (max-width: 600px) {
+    section {
+        margin: 4rem 1rem;
+    }
 }
 
 section h1 {
@@ -61,22 +123,43 @@ section h1 {
 #intro {
     background-image: linear-gradient(45deg, #242e43 0%, #687098 100%);
     margin: 0;
-    padding: 2rem 4rem 4rem 4rem;
+    padding: 4rem;
     color: #bdd0f7;
+}
+
+@media (max-width: 1400px) {
+    #intro {
+        padding: 4rem 3rem;
+    }
+}
+
+@media (max-width: 1000px) {
+    #intro {
+        padding: 4rem 2rem;
+    }
+}
+
+@media (max-width: 600px) {
+    #intro {
+        padding: 4rem 1rem;
+    }
 }
 
 #intro p {
     text-align: center;
     margin-bottom: 1rem;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     font-weight: 200;
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #intro ul {
     display: flex;
     justify-content: center;
     gap: 2rem;
-    margin-bottom: 1.2rem;
+    margin-bottom: 3.6rem;
 }
 
 #intro ul a {
@@ -102,24 +185,42 @@ section h1 {
     height: auto;
 }
 
+#services h1 {
+    font-size: 3rem;
+    font-weight: 200;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (max-width: 1000px) {
+    #services h1 {
+        font-size: 2rem;
+    }
+}
+
 #services ul {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-auto-rows: 1fr;
     gap: 1rem;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 @media (max-width: 700px) {
     #services ul {
         grid-template-columns: 1fr;
+        grid-auto-rows: auto;
     }
 }
 
 #services li {
     padding: 1.2rem;
-    border-radius: 8px;
+    /* border-radius: 8px; */
     background-color: #fff;
-    box-shadow: 0px 10px 15px 2px rgba(0, 0, 0, 0.2);
+    /* box-shadow: 0 0 12px 0 rgb(0, 0, 0); */
 }
 
 #services li:nth-child(2) {
@@ -136,7 +237,7 @@ section h1 {
     width: calc(100% + 2.4rem);
     height: auto;
     margin: -1.2rem -1.2rem 1rem -1.2rem;
-    border-radius: 8px 8px 0 0;
+    /* border-radius: 8px 8px 0 0; */
 }
 
 #services h2 {
@@ -157,6 +258,24 @@ section h1 {
     color: #bdd0f7;
 }
 
+@media (max-width: 1400px) {
+    #process {
+        padding: 4rem 3rem;
+    }
+}
+
+@media (max-width: 1000px) {
+    #process {
+        padding: 4rem 2rem;
+    }
+}
+
+@media (max-width: 600px) {
+    #process {
+        padding: 4rem 1rem;
+    }
+}
+
 #process div {
     display: flex;
     margin: 2rem auto;
@@ -167,7 +286,7 @@ section h1 {
 
 
 #process h2 {
-    font-size: 6rem;
+    font-size: 4.6rem;
     line-height: 0.8;
     color: #5f697b;
     font-weight: 900;
@@ -191,9 +310,6 @@ section h1 {
     margin: 4rem auto;
 }
 
-#cost > * {
-}
-
 #cost h1 {
     margin: 0;
 }
@@ -206,12 +322,62 @@ section h1 {
 }
 
 #time {
-    background-color: #41c12d;
+    /* background-color: #41c12d; */
     color: #fff;
     line-height: 1;
     padding: 0.4rem;
     border-radius: 1rem;
     text-transform: uppercase;
-    font-weight: 900;
-    font-size: 0.8rem;
+    font-weight: 200;
+    font-size: 1rem;
+}
+
+footer {
+    display: flex;
+    background-image: linear-gradient(45deg, #242e43 0%, #687098 100%);
+}
+
+@media (max-width: 600px) {
+    footer {
+        flex-direction: column-reverse;
+    }
+}
+
+footer>div {
+    flex: 1;
+}
+
+footer>div:last-child {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    padding: 2rem;
+}
+
+footer h1 {
+    line-height: 1.2;
+    font-weight: 200;
+    margin-bottom: 1rem;
+}
+
+footer p {
+    font-weight: 200;
+    font-size: 1rem;
+    color: #47f92b;
+    margin-bottom: 1rem;
+}
+
+footer img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#qrcode {
+    width: 12rem;
+    height: 12rem;
 }
