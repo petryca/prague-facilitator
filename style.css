@@ -378,7 +378,9 @@ footer img {
     object-fit: cover;
 }
 
-#qrcode {
-    width: 12rem;
-    height: 12rem;
+#icons {
+    display: grid;
+    grid-template-columns: 96px 96px;
+    grid-auto-rows: 96px;
+    gap: 1rem;
 }
