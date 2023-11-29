@@ -9,7 +9,10 @@
     box-sizing: border-box;
     text-wrap: pretty;
 }
-
+.white
+{
+     color: #ffffff;
+    }
 :root {
     font-size: 28px;
     font-family: 'Lato', sans-serif;
