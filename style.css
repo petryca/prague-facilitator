@@ -71,7 +71,7 @@ header h1 {
         transform: rotate(-90deg);
         transform-origin: top left;
         position: absolute;
-        top: 440px;
+        top: 500px;
         left: 0;
     }
 }
