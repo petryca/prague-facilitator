@@ -170,18 +170,18 @@ section h1 {
 #intro ul a {
     display: block;
     width: 3rem;
-    border-radius: 20%;
-    box-shadow: 0 0 10px 0 rgba(0, 0, 0, .8);
+    border-radius: 10%;
+    box-shadow: 0 0 15px 0 rgba(0, 0, 0, .8);
     transition: all .3s;
 }
 
 #intro ul a.active {
-    box-shadow: 0 0 15px 0 rgba(155, 155, 155, .8);
+    box-shadow: 0 0 15px 0 rgba(255, 255, 255, .8);
 }
 
 #intro ul a:hover {
     transform: scale(1.1);
-    box-shadow: 0 0 10px 0 rgba(155, 155, 155, .8);
+    box-shadow: 0 0 15px 0 rgba(255, 255, 255, .8);
 }
 
 #intro ul img {
